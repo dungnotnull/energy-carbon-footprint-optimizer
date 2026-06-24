@@ -1,0 +1,29 @@
+{
+  "cluster": "science-industry",
+  "shared_by": "energy-carbon-footprint-optimizer",
+  "package_name": "energy_carbon_footprint_optimizer",
+  "package_root": "../../src/energy_carbon_footprint_optimizer",
+  "install_command": "pip install -e D:\\\\skills\\\\energy-carbon-footprint-optimizer",
+  "shared_modules": [
+    "energy_carbon_footprint_optimizer.framework_selector",
+    "energy_carbon_footprint_optimizer.scoring_engine",
+    "energy_carbon_footprint_optimizer.improvement_roadmap",
+    "energy_carbon_footprint_optimizer.compliance_check",
+    "energy_carbon_footprint_optimizer.harness",
+    "energy_carbon_footprint_optimizer.knowledge_brain"
+  ],
+  "shared_constants": [
+    "energy_carbon_footprint_optimizer.constants.FRAMEWORKS",
+    "energy_carbon_footprint_optimizer.constants.DIMENSIONS",
+    "energy_carbon_footprint_optimizer.constants.EVIDENCE_HIERARCHY"
+  ],
+  "shared_models": [
+    "energy_carbon_footprint_optimizer.models.ScoringInput",
+    "energy_carbon_footprint_optimizer.models.EvaluationReport",
+    "energy_carbon_footprint_optimizer.models.RoadmapItem"
+  ],
+  "shared_skill_references": [
+    "skills/shared-cluster-sub-skills.md",
+    "skills/main.md"
+  ]
+}

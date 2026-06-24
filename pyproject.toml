@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "energy-carbon-footprint-optimizer"
+version = "0.1.0"
+description = "Production-grade carbon accounting and decarbonisation roadmap harness for the science-industry skill cluster."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Open Source Contributors"}]
+dependencies = [
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+crawl = ["crawl4ai", "requests"]
+dev = ["pytest", "requests"]
+
+[project.scripts]
+eco-optimizer = "energy_carbon_footprint_optimizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
